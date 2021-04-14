@@ -2,8 +2,17 @@
 
 class Main {
 	public static void main(String[] args) {
-		System.out.println(isPrime(5));
-		System.out.println(isPrime(25));
+		int sum = 2;
+
+		for (int i = 3; i < 10; i++)
+		{
+			if (isPrime(i))
+			{
+				sum += i;
+			}
+		}
+
+		System.out.println(sum);
 	}
 
 	public static boolean isPrime(int num)
